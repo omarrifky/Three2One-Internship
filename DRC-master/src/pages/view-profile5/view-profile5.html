@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      View Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="back" padding id="page6">
+  <ion-list id="viewProfile-list5" >
+    <ion-item class="i1" id="viewProfile-list-item2" no-border>
+      <div  no-border align = "center">
+      <ion-avatar item-center no-border>
+        <img  [style.border]="'3px solid' + white" src="assets/imgs/profile.png" (click) = "UploadImage()">
+      </ion-avatar>
+    </div>
+    </ion-item>
+    <h2 align = "center"  no-border style="color: rgb(101, 101, 150)">
+      {{infos.name}}
+    </h2>
+    <h6 align = "center" no-border style="color: white">
+      {{userName}}
+    </h6>
+    <h5 id="viewProfile-heading3" style="color:green;text-align:center;">
+      {{infos.jobTitle}}
+    </h5>
+  </ion-list>
+  <h4 id="viewProfile5-heading24" style="color:#ffffff;font-weight:600;">
+    Languages
+  </h4>
+
+  <ion-list *ngFor="let language of infos.languages">
+      <ion-item style="background-color:transparent;"class="List">
+          
+          <p style="color: silver;">Language:</p>
+          <p style="color: teal">{{language.language}}</p>
+
+          <p style="color: silver;">Reading:</p>
+          <ion-rating style="color:teal;"
+              [numStars]="5"
+                [readOnly]="true"
+             [value]=language.reading
+             >
+           </ion-rating>
+
+           <p style="color: silver;">Writing:</p>
+           <ion-rating style="color:teal;"
+           [numStars]="5"
+             [readOnly]="true"
+          [value]=language.writing
+          >
+        </ion-rating>
+
+        <p style="color: silver;">Listening:</p>
+           <ion-rating style="color:teal;"
+           [numStars]="5"
+             [readOnly]="true"
+          [value]=language.listening
+          > </ion-rating>
+
+          <p style="color: silver;">Speaking:</p>
+           <ion-rating style="color:teal;"
+           [numStars]="5"
+             [readOnly]="true"
+          [value]=language.speaking
+          ></ion-rating>
+
+          <p style="color: silver;">Jusification:</p>
+          <p style="color: teal">{{language.jusification}}</p>
+
+        
+           
+
+
+
+
+      </ion-item>
+  </ion-list>
+  <button id="Add-Language" ion-button (click)="AddNewLanguage()" color="stable" round block *ngIf=" isSearch || IsHr">Add New Language</button>
+
+</ion-content>

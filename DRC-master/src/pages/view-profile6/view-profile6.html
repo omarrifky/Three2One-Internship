@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      View Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="back" padding id="page7">
+  <ion-list id="viewProfile-list5" >
+    <ion-item class="i1" id="viewProfile-list-item2" no-border>
+      <div  no-border align = "center">
+      <ion-avatar item-center no-border>
+        <img  [style.border]="'3px solid' + white" src="assets/imgs/profile.png" (click) = "UploadImage()">
+      </ion-avatar>
+    </div>
+    </ion-item>
+    <h2 align = "center"  no-border style="color: rgb(101, 101, 150)">
+      {{infos.name}}
+    </h2>
+    <h6 align = "center" no-border style="color: white">
+      {{userName}}
+    </h6>
+    <h5 id="viewProfile-heading3" style="color:green;text-align:center;">
+      {{infos.jobTitle}}
+    </h5>
+  </ion-list>
+  <h4 id="viewProfile6-heading29" style="color:#ffffff;font-weight:600;">
+    Attachments
+  </h4>
+  <button id="Add-Attachment" ion-button color="stable" (click) = "UploadFile()"round block *ngIf=" isSearch || IsHr">Add New Attachment</button>
+</ion-content>

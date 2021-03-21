@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      View Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="back" padding id="page3">
+  <ion-list id="viewProfile-list5" >
+    <ion-item class="i1" id="viewProfile-list-item2" no-border>
+      <div  no-border align = "center">
+      <ion-avatar item-center no-border>
+        <img  [style.border]="'3px solid' + white" src="assets/imgs/profile.png" (click) = "UploadImage()">
+      </ion-avatar>
+    </div>
+    </ion-item>
+    <h2 align = "center"  no-border style="color: rgb(101, 101, 150)">
+      {{infos.name}}
+    </h2>
+    <h6 align = "center" no-border style="color: white">
+      {{userName}}
+    </h6>
+    <h5 id="viewProfile-heading3" style="color:green;text-align:center;">
+      {{infos.jobTitle}}
+    </h5>
+    
+  </ion-list>
+  <h4 id="viewProfile2-heading9" style="color:#ffffff;font-weight:600;">
+    Skills
+  </h4>
+  <ion-list *ngFor="let skill of infos.skills">
+      <ion-item style="background-color:transparent;"class="List">
+          
+          <p style="color: silver;">Skill name:<span style="color:rgb(84, 179, 243); ">{{skill.skill}}</span> </p>
+        
+          <p style="color: silver;">Profeciency:</p>
+          <ion-rating style="color:teal;"
+              [numStars]="5"
+                [readOnly]="true"
+             [value]=skill.profeciency >
+           </ion-rating>
+
+           <p style="color: silver;">Interest:</p>
+           <ion-rating style="color:teal;"
+              [numStars]="5"
+                [readOnly]="true"
+             [value]=skill.interest >
+           </ion-rating>
+           <p style="color: silver;">Years of experience: <span style="color:rgb(84, 179, 243); ">{{skill.yearsOfExprince}}</span></p>
+      </ion-item>
+  </ion-list>
+  <button id="Add-Skill" ion-button (click)="AddNewSkill()" color="stable" round block *ngIf="isSearch || IsHr">Add New Skill </button>
+
+
+  
+</ion-content>

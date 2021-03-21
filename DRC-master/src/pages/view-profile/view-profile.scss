@@ -1,0 +1,23 @@
+page-view-profile {
+    ion-avatar img  {
+        width:100% !important;
+        height : 100% !important;
+        max-width: 120px !important;  //any size
+        max-height: 120px !important; //any size
+        }
+
+        .back {
+            background-color:transparent;
+            background-image: url('../assets/imgs/b1.png');
+    }
+    .i1 {
+        background-color:transparent;
+          border-style: none!important;
+        }
+    .form{
+        border: 0.5mm white solid ;
+    }
+    .continue{
+        background: rgba(10, 130, 241, 0.171);  
+    }
+}

@@ -1,0 +1,81 @@
+page-apply-leave {
+    .homeall{
+        color: rgb(142, 196, 247);
+    }
+    .datefrom{
+      display: inline-block!important;
+      width: 49%;
+      color: #d1d1d1;
+    }
+    .dateto{
+        display: inline-block!important;
+      width: 49%;
+      color: #d1d1d1;
+    }
+    .leavet{
+        color:rgb(142, 196, 247);
+    }
+    input {
+        border-style:none;
+        color: #d1d1d1;
+       
+    }
+    .fromlabel{
+        width: 100%;
+       color:rgb(142, 196, 247);
+    }
+    .date-input{
+        width: 50%;
+        color: #d1d1d1;
+    }
+
+    .day{
+        width: 30%;
+        display: inline-block;
+        color: #d1d1d1;
+    }
+    .back {
+        background-image: url('../assets/imgs/b1.png');
+    } 
+    .Applyb{
+        background: rgba(54, 54, 201,0.3);
+    }
+    .day{
+        width: 100%;
+        font-size:12px !important;
+        vertical-align: bottom;
+        display: inline-block;
+    
+    }
+    .cont{
+        width:32%;
+        border-color:rgb(142, 196, 247);
+        border-radius : 15px;
+        display: inline-block;
+        border:1px solid rgb(255, 255, 255);
+        box-shadow: 0 5px 15px rgb(142, 196, 247);
+    }
+   
+    .selected {
+        border-color: red;
+    }
+
+    .check {
+        width:100% !important;  
+        height : 100% !important;
+        margin: auto; 
+        border: none ;
+        vertical-align: top;
+        background-color: transparent; 
+        display: inline-block;
+    }
+    ion-input {
+        &.custom-input {
+          font-size: 20px; //sets text font size
+          ::placeholder {
+            color : rgb(142, 196, 247); //sets placeholder font size
+          }
+        }
+      }
+}
+ 

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content  class="back" padding id="page8">
+  <form id="login-form14">
+    <ion-list id="login-list1">
+      <ion-item style="background-color:transparent;" id="login-input40">
+        <ion-label></ion-label>
+        <ion-input style="color:white;" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" type="email" placeholder="Three2one Email or Username"></ion-input>
+      </ion-item>
+      <ion-item style="background-color:transparent;" id="login-input41">
+        <ion-label></ion-label>
+        <ion-input style="color:white;" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" type="password"placeholder="Password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button id="login-button12"(click)="Login()" ion-button color="stable" block>
+      Log in
+    </button>
+    <button id="login-button18" ion-button clear color="positive" block href-inappbrowser="/signup" (onclick) = "ForgetPassword()">
+      Forget Password
+    </button>
+  </form>
+</ion-content>

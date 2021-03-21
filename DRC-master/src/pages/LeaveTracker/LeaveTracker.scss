@@ -1,0 +1,49 @@
+page-LeaveTracker{
+    .back {
+        background-image: url('../assets/imgs/b1.png');
+    } 
+    .list{
+        background-color: transparent;
+        border-top: transparent;
+    }
+    .text{
+        height: 50%;
+    }
+    .myChart{
+        color: rgb(255, 255, 255); 
+    }
+    #myBar {
+    width: 1%;
+    height: 5px;
+    background-color: rgb(228, 186, 1);
+    -moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 5px; 
+    }
+    
+    
+    #myProgress {
+        width: 70%;
+        background-color:transparent;
+    }
+    .donut-inner {
+        margin-top: -20%;
+        margin-bottom: 20%;
+     }
+     .donut-inner h5 {
+        margin-bottom: 10%;
+        margin-top: -30%;
+        margin-left: 37%;
+        color: rgb(168, 168, 168);
+        font-size: 200%;
+        font-weight: 400;
+     }
+     .donut-inner h6{
+        margin-bottom: 10%;
+        margin-top: -10%;
+        margin-left: 39%;
+        color: rgb(54, 162, 235);
+        font-size: 200%;
+     }
+}

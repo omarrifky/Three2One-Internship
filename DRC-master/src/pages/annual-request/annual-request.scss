@@ -1,0 +1,101 @@
+page-annual-request {
+    .leave{
+color:#add812;
+font-size:20px;
+text-align:center;
+font-weight: bold;
+    }
+    .button {
+      text-align: center;
+      display: block !important ;
+       }
+.img{
+     display: block;
+     margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+}
+.list {
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0;
+    margin-bottom: 20px; 
+    border-style:none;
+ }  
+    
+   ion-input {
+        border-style:none;
+        
+    }
+    .has-header {
+        background-image: url('../assets/imgs/b1.png');
+    } 
+    .b-confirm{
+        background-color: rgba(12, 119, 165, 0.226) !important;
+    }
+    .b-edit
+    {
+        background-color: rgba(231, 247, 8, 0.226) !important;
+    }
+    .b-cancel{
+        background-color:  rgba(134, 14, 94, 0.226)  !important;
+    }
+       
+    
+
+.circle{
+    width:14px;
+  height:14px; 
+  border-radius:100%;
+  background:rgb(170, 240, 7);
+  display:inline-block;
+  margin-right: 10px; 
+}
+.circle1{
+    width:14px;
+  height:14px; 
+  border-radius:100%;
+  background:rgb(245, 26, 128);
+  display:inline-block;
+  margin-right: 10px;}
+     
+}
+.fromlabel{
+    width: 30%;
+   color: #d1d1d1;
+}
+
+.file-upload {
+	position: relative;
+	display: inline-block;
+}
+.file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width:0;
+    height: 100%;
+    opacity: 0;
+}
+.file-upload__label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+  
+    display: inline-block;
+    cursor: pointer; 
+}
+//.file-upload__label:focus,
+//.file-upload__label:hover,{
+   // background-color: rgba(91, 192, 8, 0.226)
+//}
+.upload-button{
+    text-align: center;
+    display: block !important ;
+    background-color: rgba(91, 192, 8, 0.226)
+
+}
